@@ -7,269 +7,111 @@
     <meta name="author" content="ufukdogan92">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ufuk Doğan | Blog</title>
+    <title>Ufuk Doğan </title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Optional theme -->
     <link rel="stylesheet" href="css/bootstrap-theme.css">
-    <link rel="stylesheet" href="fonts/style.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
     <script src="js/jquery.js"></script>
-
-    <script>
-
-        $(function(){
-            $(window).load(function() {
-                $(".sagKutu").fadeIn(2000);
-                $(".solKutu").fadeIn(600);
-            });
-            $(window).load(function() {
-                $(".solKutu").animate({
-                    left: "0",
-                    top: "0"
-                }, 200)
-                $(".solKutu").animate({
-                    left: "-20%"
-                }, 300)
-                $(".solKutu").animate({
-                    left: "0"
-                }, 300)
-                $(".solKutu").animate({
-                    left: "-10%"
-                }, 300)
-                $(".solKutu").animate({
-                    left: "0"
-                }, 300)
-
-            });
-
-
-            $(".solKutu .kutuImage").hover(function(){
-                $(this).stop( true, true ).animate({
-                    top: "-100%"
-                }, 250)
-            });
-            $(".solKutu").hover(function(){
-                $(this).find(".kutuIcerik").stop( true, true ).animate({
-                    top: "0"
-                }, 250)
-            });
-            $(".solKutu").mouseleave(function(){
-                $(this).find(".kutuImage").stop( true, true ).animate({
-                    top: "0"
-                }, 250)
-                $(this).find(".kutuIcerik").stop( true, true ).animate({
-                    top: "100%"
-                }, 250)
-            });
-
-
-
-
-
-
-        })
-    </script>
-
 </head>
 <body>
-
-<div class="navbar-wrapper">
-    <div id="topBg"></div>
-    <div id="topCenter">
-        <div id="header">
-            <div class="col-2 col-sm-2 col-lg-2"></div>
-            <div class="col-8 col-sm-8 col-lg-8">
-                <div class="col-12 col-sm-12 col-lg-12">
-                    <div class="col-4 col-sm-4 col-lg-4"></div>
-                    <div class="col-4 col-sm-4 col-lg-4">
-                        <div id="logo">
-                            <a href="#">
-                                <img src="img/logo.png" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-4 col-sm-4 col-lg-4"></div>
-                </div>
-                <div class="clearfix"></div>
-                <div id="slogan">dost acı söyler, aşk yalan söyler</div>
-                <div id="ustCizgi"></div>
-                <div id="headerAciklama">Şuan bunları okuyorsanız benim sayfamda yerinizi almışsınız demektir, tembel olduğum kadar bir okadar zekiyimdir. Sayfamda hayatımı merak edenler için gündelik hayatımı sizlere aktarmaya çalışacağım, tabi beni neden merak ediyorsunuz onuda anlamış değilim, her neyse böyle bir sayfayı siz değerli okurlarım için hazırladım.</div>
-
-            </div>
-            <div class="col-2 col-sm-2 col-lg-2"></div>
+<div id="blur-bg">
+    <div id="left-menu">
+        <div class="menu-item">
+            <a href="/home">
+                <i class="fa fa-2x fa-home"></i>
+                <div>Home</div>
+            </a>
         </div>
-        <div class="clearfix"></div>
-        <div class="headerBg">
-            <div class="col-1 col-sm-1 col-lg-1"></div>
-            <div class="col-10 col-sm-10 col-lg-10" id="kutular">
-                <div class="col-7 col-sm-7 col-lg-7">
-                    <div class="col-4 col-sm-4 col-lg-4 solKutu kutu1">
-                        <div class="kutuImage">
-                            <img src="img/1.jpg">
-                        </div>
-                        <div class="kutuIcerik">
-                            Mysql 4.1.3 sürümüyle gelen Mysqli(MySQL Improved Extension) eklentisi php 5 ile birlikte kullanılmaya başlanmıştır. Mysql e göre daha esnek ve güvenli bir yapıya sahip olan Mysqli aynı zamanda daha stabil bir yapıdadır. Mysql5 ile gelen yeni özellikleri içerdiğinden ve
-                        </div>
-                    </div>
-                    <div class="col-4 col-sm-4 col-lg-4 solKutu kutu2">
-                        <div class="kutuImage">
-                            <img src="img/2.jpg">
-                        </div>
-                        <div class="kutuIcerik">
-                            Mysql 4.1.3 sürümüyle gelen Mysqli(MySQL Improved Extension) eklentisi php 5 ile birlikte kullanılmaya başlanmıştır. Mysql e göre daha esnek ve güvenli bir yapıya sahip olan Mysqli aynı zamanda daha stabil bir yapıdadır. Mysql5 ile gelen yeni özellikleri içerdiğinden ve
-                        </div>
-                    </div>
-                    <div class="col-4 col-sm-4 col-lg-4 solKutu kutu3">
-                        <div class="kutuImage">
-                            <img src="img/3.jpg">
-                        </div>
-                        <div class="kutuIcerik">
-                            Mysql 4.1.3 sürümüyle gelen Mysqli(MySQL Improved Extension) eklentisi php 5 ile birlikte kullanılmaya başlanmıştır. Mysql e göre daha esnek ve güvenli bir yapıya sahip olan Mysqli aynı zamanda daha stabil bir yapıdadır. Mysql5 ile gelen yeni özellikleri içerdiğinden ve
-                        </div>
-                    </div>
-                    <div class="col-4 col-sm-4 col-lg-4 solKutu kutu4">
-                        <div class="kutuImage">
-                            <img src="img/4.jpg">
-                        </div>
-                        <div class="kutuIcerik">
-                            Mysql 4.1.3 sürümüyle gelen Mysqli(MySQL Improved Extension) eklentisi php 5 ile birlikte kullanılmaya başlanmıştır. Mysql e göre daha esnek ve güvenli bir yapıya sahip olan Mysqli aynı zamanda daha stabil bir yapıdadır. Mysql5 ile gelen yeni özellikleri içerdiğinden ve
-                        </div>
-                    </div>
-                    <div class="col-4 col-sm-4 col-lg-4 solKutu kutu5">
-                        <div class="kutuImage">
-                            <img src="img/5.jpg">
-                        </div>
-                        <div class="kutuIcerik">
-                            Mysql 4.1.3 sürümüyle gelen Mysqli(MySQL Improved Extension) eklentisi php 5 ile birlikte kullanılmaya başlanmıştır. Mysql e göre daha esnek ve güvenli bir yapıya sahip olan Mysqli aynı zamanda daha stabil bir yapıdadır. Mysql5 ile gelen yeni özellikleri içerdiğinden ve
-                        </div>
-                    </div>
-                    <div class="col-4 col-sm-4 col-lg-4 solKutu kutu6">
-                        <div class="kutuImage">
-                            <img src="img/6.jpg">
-                        </div>
-                        <div class="kutuIcerik">
-                            Mysql 4.1.3 sürümüyle gelen Mysqli(MySQL Improved Extension) eklentisi php 5 ile birlikte kullanılmaya başlanmıştır. Mysql e göre daha esnek ve güvenli bir yapıya sahip olan Mysqli aynı zamanda daha stabil bir yapıdadır. Mysql5 ile gelen yeni özellikleri içerdiğinden ve
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1 col-sm-1 col-lg-1"></div>
-                <div class="col-4 col-sm-4 col-lg-4">
-                    <div class="sagKutu">
-                        <div class="sagKutuImage">
-                            <img src="img/image2.jpg" />
-                        </div>
-                        <div class="sagKutuAciklama">
-                            <div class="sagKutuAciklamaCizgi"></div>
-                            <div class="sagKutuAciklamaSag">
-                                <div class="sagKutuAciklamaBaslik">Galatasaray</div>
-                                <div class="sagKutuAciklamaIcerik">20. şampiyonluğunu kutluyor</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="col-1 col-sm-1 col-lg-1"></div>
+
+        <div class="menu-item">
+            <a href="/know-me">
+                <i class="fa fa-2x fa-user"></i>
+                <div>Know Me</div>
+            </a>
         </div>
-        <div class="clearfix"></div>
+
+        <div class="menu-item">
+            <a href="/my-skills">
+                <i class="fa fa-2x fa-laptop"></i>
+                <div>My Skills</div>
+            </a>
+        </div>
+
+        <div class="menu-item">
+            <a href="/my-resume">
+                <i class="fa fa-2x fa-graduation-cap"></i>
+                <div>My Resume</div>
+            </a>
+        </div>
+
+        <div class="menu-item">
+            <a href="/my-projects">
+                <i class="fa fa-2x fa-briefcase"></i>
+                <div>My Projects</div>
+            </a>
+        </div>
+
+        <div class="menu-item">
+            <a href="/contact">
+                <i class="fa fa-2x fa-envelope"></i>
+                <div>Contact</div>
+            </a>
+        </div>
+    </div>
+
+    <div id="my-container">
+        <h1>
+            Ufuk DOĞAN
+        </h1>
+        <h2>
+            Back End Developer
+        </h2>
+
+        <div id="content-text">
+            Haziran 2017’de Çanakkale Onsekiz Mart Üniversitesi Bilgisayar Mühendisliği bölümünden mezun oldum.
+            Daha önce de Bilgisayar Programcılığı bölümünü bitirdim. 2012 yılından yılından beri Css, Jquery ve PHP ile uğraşıyorum.
+            Mysql, Posgresql, Mssql gibi veritabanlarını kullanabiliyorum (arayüz veya komut satırında). Son zamanlarda Symfony ve
+            Django ile çalışmaya başladım. Django ve Django Rest Framework ile uygulamalar yapıyorum. Yazdığım Web Servisleri
+            PHP veya Angular 1.* ile kullanabiliyorum. Projeleri Github veya Bitbucket üzerinden geliştiriyorum. Sunucu olarak
+            nginx veya apache kullanırum. İşletim sistemi olarak Linux dağıtımlarını tercih ediyorum.
+            Bu özelliklerime ilave olarak React, Redis, Angular4 uygulamaları yaparak kendimi daha çok geliştirmek istiyorum.
+        </div>
 
     </div>
-</div>
 
-<div class="clearfix"></div>
-<div class="navbar-wrapper">
-    <div class="col-12 col-sm-12 col-lg-12"  id="band" >
-        <div class="col-3 col-sm-3 col-lg-3"></div>
-        <div class="col-6 col-sm-6 col-lg-6">
-            <div class="col-3 col-sm-3 col-lg-3 bandKutu">
-                <img src="img/all.png" />
-                <span><a href="#"> Hepsini Göster</a></span>
-            </div>
-            <div class="col-3 col-sm-3 col-lg-3 bandKutu">
-                <img src="img/posta.png" />
-                <span><a href="#">Posta Kutusu</a></span>
-            </div>
-            <div class="col-3 col-sm-3 col-lg-3 bandKutu">
-                <img src="img/chat.png" />
-                <span><a href="#">Dert Ortağı</a></span>
-            </div>
-            <div class="col-3 col-sm-3 col-lg-3 bandKutu">
-                <img src="img/muzik.png" />
-                <span><a href="#">Müzik Listesi</a></span>
-            </div>
+    <div id="right-menu">
+        <div class="right-menu-item">
+            <a target="_blank" href="https://github.com/ufukdogan92">
+                <i class="fa fa-2x fa-github"></i>
+            </a>
+        </div>
+        <div class="right-menu-item">
+            <a target="_blank" href="https://linkedin.com/in/ufukdogan92">
+                <i class="fa fa-2x fa-linkedin-square"></i>
+            </a>
+        </div>
+        <div class="right-menu-item">
+            <a target="_blank" href="https://twitter.com/ufukdogan92">
+                <i class="fa fa-2x fa-twitter-square"></i>
+            </a>
+        </div>
+        <div class="right-menu-item">
+            <a target="_blank" href="https://facebook.com/ufkdogan92">
+                <i class="fa fa-2x fa-facebook-official"></i>
+            </a>
+        </div>
+        <div class="right-menu-item">
+            <a target="_blank" href="https://instagram.com/ufukdogan92">
+                <i class="fa fa-2x fa-instagram"></i>
+            </a>
         </div>
     </div>
 </div>
-<div class="clearfix"></div>
-
-<div class="navbar-wrapper">
-    <div id="footer">
-        <div>
-            <div class="col-2 col-sm-2 col-lg-2"></div>
-            <div class="col-8 col-sm-8 col-lg-8">
-                <div class="col-5 col-sm-5 col-lg-5">
-                    <img src="img/html.png" />
-                    <div class="altIcerik">
-                        Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter Schriftsteller eine Hand voll Wörter nahm und diese durcheinander warf um ein Musterbuch zu erstellen. Es hat nicht nur 5 Jahrhunderte überlebt, sondern auch in Spruch in die elektronische Schriftbearbeitung geschafft (bemerke, nahezu unverändert). Bekannt wurde es
-                    </div>
-                </div>
-                <div class="col-2 col-sm-2 col-lg-2">
-                    <div class="footerImage"><img src="img/footerImage.png" /></div>
-                </div>
-                <div class="col-5 col-sm-5 col-lg-5">
-                    <img src="img/kup.png" />
-                    <div class="altIcerik">
-                        Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter Schriftsteller eine Hand voll Wörter nahm und diese durcheinander warf um ein Musterbuch zu erstellen. Es hat nicht nur 5 Jahrhunderte überlebt, sondern auch in Spruch in die elektronische Schriftbearbeitung geschafft (bemerke, nahezu unverändert). Bekannt wurde es
-                    </div>
-                </div>
-            </div>
-            <div class="col-2 col-sm-2 col-lg-2"></div>
-        </div>
-        <div class="col-12 col-sm-12 col-lg-12" style="padding-top: 50px">
-            <div class="col-2 col-sm-2 col-lg-2"></div>
-            <div class="col-8 col-sm-8 col-lg-8">
-                <div class="col-4 col-sm-4 col-lg-4 footerAltSag">
-                    Peçeteleri Yere Atmayın
-                    <div class="mailBg">
-                        <input class="mailInput" placeholder="mail adresi" name="#" type="text" />
-                    </div>
-                </div>
-                <div class="col-1 col-sm-1 col-lg-1"> </div>
-                <div class="col-7 col-sm-7 col-lg-7 yorum">
-                    <span>Son Yapılan Yorumlar</span>
-                    <div class="yorumIcerik">
-                        <div class="col-1 col-sm-1 col-lg-1">
-                            <div class="yorumImage"> <img src="img/1.jpg"></div>
-                        </div>
-                        <div class="col-11 col-sm-11 col-lg-11 yorumIcerikMetin">
-                            Yaz boyunca dinledim artık hesapladım dakikasına göre kalktıktan sonra iftara kadar 90,5
-                            Yaz boyunca dinledim artık hesapladım dakikasına göre kalktıktan sonra iftara kadar 90,5
-                            Yaz boyunca dinledim artık hesapladım dakikasına göre kalktıktan sonra iftara kadar 90,5
-                        </div>
-                    </div>
-                </div><div class="clear"></div>
-            </div>
-            <div class="col-2 col-sm-2 col-lg-2"></div>
-        </div>
-
-
-
-        <div class="col-12 col-sm-12 col-lg-12" >
-            <div class="col-3 col-sm-3 col-lg-3"></div>
-            <div class="col-8 col-sm-8 col-lg-6">
-               <div class="copyright"> © Copyright 2013 tembelbikişilik  Tüm hakları saklıdır.</div>
-            </div>
-            <div class="col-3 col-sm-3 col-lg-3"></div>
-        </div>
-    </div>
-    <div class="clear"></div>
-</div>
-
-
-
-<div class="clearfix"></div>
-<script src="js/bootstrap.min.js"></script>
 
 </body>
+
+<script src="js/bootstrap.min.js"></script>
 </html>

@@ -1,5 +1,4 @@
 
-
 @font-face {
     font-family: 'bold';
     src: url('../fonts/bold.otf') format("truetype");
@@ -10,275 +9,108 @@
     src: url('../fonts/medium.otf') format("truetype");
 }
 
-
-
-
 @font-face {
     font-family: 'light';
     src: url('../fonts/light.otf') format("truetype");
 }
 
-a:visited,a:link, a:active{
-    color: white;
-}
-a:hover{
-    text-decoration: none;
-}
-#topBg{
-    height: 32px;
-    background: url("../img/topBg.jpg") center center repeat-y;
-    border-bottom: 3px solid #420632;
-}
-
-
-
-
-#topCenter{
-    background: url("../img/topCenter.jpg") center top no-repeat;
-    padding-bottom: 50px;
-}
 body{
-    background: url("../img/bg.jpg") repeat-y center top #2e3b70;
-}
-#header{
-    padding: 3%;
-    font-family: "medium";
-    padding-bottom: 0;
-
-}
-#logo{
-    width: 50%;
-    margin: auto;
-}
-#logo img{
-    width: 100%;
-}
-
-#slogan{
-    text-align: center;
+    margin:auto;
+    background: url("../img/penguin.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color: #FFF;
-    padding: 12px 0;
-    font-size: 16px;
-    text-shadow: 1px 2px 8px rgba(2, 1, 3, 0.55);
+    font-family: medium;
 }
 
-#ustCizgi{
-    height: 1px;
-    background: #FFF;
-    box-shadow: 2px 1px 2px #9c9c9c;
-}
-#headerAciklama{
-    text-align: center;
-    color: #FFF;
-    width: 93%;
-    margin: auto;
-    text-shadow: 1px 2px 8px rgba(143, 76, 219, 0.55);
-    padding: 5px 0;
-    font-size: 13px;
-}
-
-#kutular{
-    padding-top: 25px;
-}
-.kutuImage{
+#blur-bg{
+    background: rgba(0, 0, 0, 0.76);
     width: 100%;
-    position: relative;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
     top: 0;
+    left: 0;
 }
-.kutuImage img{
-    width: 100%;
-}
-
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
-    padding: 0;
-}
-
-.kutuIcerik{
-    position: absolute;
-    text-align: center;
+a,a:link,a:active,a:visited,a:focus{
+    outline: none;
+    text-decoration: none;
     color: #FFF;
-    margin: auto;
-    text-shadow: 1px 2px 8px rgba(143, 76, 219, 0.55);
-    padding: 3px;
-    font-size: 13px;
-    cursor:pointer;
-    top: -100%;
+    font-size: 15px;
 }
 
-.solKutu{
-    height: 100%;
-    overflow: hidden;
-    left: -120%;
-    display: none;
-    top: 100%;
+#left-menu{
+    width: 150px;
+    min-height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(17, 17, 17,0.8);
+    z-index: 1;
 }
-
-
-
-.kutuIcerik{
-    background: #d15d22;
-    box-shadow: inset 0px 0px 80px rgba(209, 39, 28, 0.60);
+.menu-item{
     width: 100%;
-    height: 100%;
-    font-family: "medium";
+    text-align: center;
+    padding: 15px;
 }
 
-.sagKutu{
-    width: 100%;
-    padding: 10% 0;
-    display: none;
+.menu-item a:hover{
+    color: #4a95ff;
+    -webkit-transition:all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    transition:all 0.3s ease-in-out 0s;
+}
+
+
+#right-menu{
+    width: 50px;
+    min-height: 100%;
+    position: fixed;
     right: 0;
-
-}
-.sagKutuImage {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 25%;
-}
-.sagKutuImage img{
-    width: 100%;
-
-}
-.sagKutuAciklama{
-    background: rgba(0, 0, 0, 0.70);
-    height: 100%;
-    position: absolute;
-    color: #FFF;
-    width: 100%;
-    top: 457%;
-    padding: 5% 5%;
-
-}
-.sagKutuAciklamaCizgi{
-    height: 100%;
-    width: 1%;
-    background: #FFF;
-    float: left;
-}
-.sagKutuAciklamaSag{
-     margin-left: 5%;
-     font-size: 12px;
-     font-family: "medium";
- }
-.sagKutuAciklamaBaslik{
-    font-family: "medium";
-    font-weight: bold;
-    font-size: 13px;
-}
-
-#band{
-    background: rgba(1, 43, 64, 0.73);
-    color: #FFF;
-    line-height: 60px;
-    text-align: left;
-    font-size: 12px;
     top: 0;
+    z-index: 1;
+}
 
+.right-menu-item{
+    padding: 5px 10px;
 }
-#band span{
-    padding-left: 4px;
-}
-.bandKutu{
-    opacity: 0.7;
-    padding-left: 10px;
-}
-#band .bandKutu:hover{
-    opacity: 1;
-}
-#footer{
-    background: url("../img/footerBg.jpg") center top;
+
+#my-container{
+    width: 700px;
+    margin: auto;
     min-height: 400px;
-    padding-top: 15px;
-}
-#footer .col-5 img{
-    float: left;
-    padding: 8px;
-}
-.altIcerik{
-    font-size: 12px;
-    font-family: "medium";
-    color: #FFF;
-}
-.footerImage{
-    width: 100%;
-    padding-top: 15pxqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq;
-}
-.footerImage img{
-    width: 100%;
-}
-.clear{
-    clear: both;
-}
-
-.mailBg{
-    background: url("../img/eposta.png") no-repeat center top;
-    padding: 20px;
-    padding-bottom: 50px;
-
-
-}
-.footerAltSag{
-    font-size: 14px;
-    color: #FFF;
-    font-family: "medium";
-    text-align: center;
-}
-.mailInput {
-    border-radius: 10px;
-    border: none;
-    padding: 5px;
-    padding-right: 20px;
-    color: #000;
-    background: url("../img/ara.png") no-repeat right center #CCC ;
-}
-.yorum{
-    font-size: 14px;
-    color: #FFF;
-    font-family: "medium";
-
-}
-.yorum span{
-
-}
-.yorumIcerik{
-    padding: 9px;
-    background: rgba(45, 45, 45, 0.71);
-    font-size: 11px;
-    height: 100%;
-    border-radius: 5px;
-    padding-bottom: 55px;
-}
-.yorumIcerik span{
-    padding: 8px;
-    float: left;
-
-}
-.yorumImage{
-    width: 100%;
-    height: 100%;
-}
-.yorumImage img{
-    width: 100%;
-    float: left;
-    height: 100%;
-    padding: 1px;
-    border: 1px solid #CCC;
-    border-radius:3px;
-    background: #CCC;
-}
-.yorumIcerikMetin{
-    padding: 5px;
+    margin-top: 40px;
+    color: #2d2d2d;
     padding-top: 0;
 }
-.yorum span{
-
+#my-container h1{
+    color: #FFF;
+    padding: 15px;
+    padding-left: 0;
+    padding-bottom: 5px;
+    line-height: 36px;
+    font-family: bold;
+    border-bottom: 3px solid #FFF;
 }
 
-.copyright{
-    padding: 10px;
-    font-size: 12px;
+#my-container h2{
+    font-family: light;
     color: #FFF;
-    text-align: left;
-    background: rgba(0, 0, 0, 0.25);
+    font-size: 18px;
+    text-align: right;
+    line-height: 0;
+    padding-top: 5px;
+    margin: 0;
+}
+
+#content-text{
+    color: #FFF;
+    font-family: medium;
+    font-size: 16px;
+    text-align: justify;
+    padding-top: 30px;
 }
